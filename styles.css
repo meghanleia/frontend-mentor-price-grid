@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+* {
+    vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.single-price-grid {
+    background-color: white;
+    border-radius: 0.8rem;
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: ease all 0.5s;
+}
+
+.main-grid {
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+    padding: 4rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    transition: ease all 0.5s;
+}
+
+.main-header {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+}
+
+.main-subhead {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.main-text {
+    color: hsla(217, 22%, 67%, 0.9);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.monthly-grid {
+    box-sizing: border-box;
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 50%;
+    padding: 4rem;
+    border-bottom-left-radius: 0.8rem;
+    transition: ease all 0.5s;
+}
+
+.monthly-header {
+    color: hsla(0, 0%, 100%, 0.9);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-bottom: 1.8rem;
+}
+
+.price {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    font-stretch: expanded;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+.monthly-price {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 1.5rem;
+}
+
+.monthly-price-sub {
+    color: hsla(0, 0%, 100%, 0.7); 
+    font-size: 1.4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 2.5rem;
+}
+
+.signup-button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsla(0, 0%, 100%, 0.9);
+    padding: 1.3rem 3.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 1rem 1rem 2rem hsla(179, 62%, 28%, 0.5);
+}
+
+.features-grid {
+    box-sizing: border-box;
+    background-color: hsla(179, 62%, 43%, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 50%;
+    padding: 4rem;
+    border-bottom-right-radius: 0.8rem;
+    transition: ease all 0.5s;
+}
+
+.features-header {
+    color: hsla(0, 0%, 100%, 0.9);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+
+.plan-features {
+    list-style-type: none;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+    color: hsla(217, 11%, 29%, 0.9);
+    padding-top: 2rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 48rem) {
+    .single-price-grid {
+        flex-direction: column;
+        max-width: 31rem;
+    }
+    .main-grid {
+        padding: 3rem;
+    }
+    .main-text {
+        font-size: 1.3rem;
+        line-height: 2;
+        padding-top: 0.5rem;
+    }
+    .monthly-grid {
+        width: 100%;
+        padding: 3rem;
+        border-radius: 0;
+    }
+    .features-grid {
+        width: 100%;
+        padding: 3rem;
+        border-bottom-left-radius: 0.8rem;
+    }
+}
